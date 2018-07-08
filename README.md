@@ -15,8 +15,14 @@ The LaTeX template of thesis of HDU
 
 ## 2、编译方法
 
+使用mac的用户请看下面，windows用户直接略过。
+使用mac或者linux的用户可以通过下面两个途径下载Adobe字体，解压放到～/Library/Fonts目录下(如果不知道怎么放入————第一步：打开访达；第二步：按住shift+command+g,这时候就出现了～/Library目录，再进入Fonts目录；
+第三步：把解压的字体包直接放入到Fonts目录，保存即可)，即可解决编译时出现的字体找不到错误。
+
 - [字体包下载-百度盘](https://pan.baidu.com/s/1kVuF0Fl)
 - [字体包下载-Google Drive](https://drive.google.com/file/d/0ByPSg5LzlAjAcm1oeWx1OGRWeEU/view)
+
+
 
 ### 2.1、 __OS X__ （[MacTeX2016](https://tug.org/mactex/) 不低于 OS X Yosemite 通过）
 
