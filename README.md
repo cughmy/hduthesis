@@ -11,18 +11,19 @@ The LaTeX template of thesis of HDU
 根据[《杭州电子科技大学研究生学位论文格式统一要求（杭电研[2012]311号）》](http://grs.hdu.edu.cn/2013/0507/c1730a51754/page.htm)，并结合实际，改造设计了相应的LaTeX模版。
 
 
-[**本模板建议计算机学院同学使用**]。
+[**本模板建议杭电计算机学院同学使用**]。
 
 ## 2、编译方法
 
-使用mac的用户请看下面，windows用户直接略过。
-使用mac或者linux的用户可以通过下面两个途径下载Adobe字体，解压放到～/Library/Fonts目录下(如果不知道怎么放入————第一步：打开访达；第二步：按住shift+command+g,这时候就出现了～/Library目录，再进入Fonts目录；
+### 2.1 使用mac的用户请看下面（windows用户直接略过）
+
+使用mac或者linux的用户可以通过下面的途径下载Adobe字体，解压放到～/Library/Fonts目录下(如果不知道怎么放入————第一步：打开访达；第二步：按住shift+command+g,这时候就出现了～/Library目录，再进入Fonts目录，把字体放入即可）
 第三步：把解压的字体包直接放入到Fonts目录，保存即可)，即可解决编译时出现的字体找不到错误。
 
 - [字体包下载-百度盘](https://pan.baidu.com/s/16enRqhqjpeSvxiaKkQ07jg)
 
 
-### 2.1、 __OS X__ （[MacTeX2016](https://tug.org/mactex/) 不低于 OS X Yosemite 通过）
+### 2.2、 __OS X__ （[MacTeX2016](https://tug.org/mactex/) 不低于 OS X Yosemite 通过）
 
 拷贝 .latexmkrc 到家目录
 
@@ -34,7 +35,7 @@ The LaTeX template of thesis of HDU
 	$ latexmk main
 
 
-### 2.2、 __windows__ （仅在[TexLive2016](http://mirrors.ustc.edu.cn/CTAN/systems/texlive/Images/texlive2016.iso) on windows10 测试）:
+### 2.3、 __windows__ （仅在[TexLive2016](http://mirrors.ustc.edu.cn/CTAN/systems/texlive/Images/texlive2016.iso) on windows10 测试）:
 
 首先在环境变量里设置```$HOME```，一般是```C:\Users\<username>```
 
@@ -45,7 +46,7 @@ The LaTeX template of thesis of HDU
 一样使用 latexmk 命令进行编译。
 如果您遇到编译错误，请检查是否正确安装texlive和以上字体包。
 
-### 2.3、__Linux__ (TeXLive2016):
+### 2.4、__Linux__ (TeXLive2016):
 
 首先添加或修改 .latexmkrc，请做好备份。
 
@@ -57,7 +58,7 @@ The LaTeX template of thesis of HDU
 windows和Linxu 皆使用 TeXLive 2016 安装
 [TeXLive 2016 中文文档](https://www.tug.org/texlive/doc/texlive-zh-cn/texlive-zh-cn.pdf)
 
-### 2.4、 开启实时编译(OS X)
+### 2.5、 开启实时编译(OS X)
 
 论文编译时间通常在20秒以上，
 为减少论文修改时的查错成本，
@@ -108,13 +109,13 @@ windows和Linxu 皆使用 TeXLive 2016 安装
 │   ├── ...
 │   ├── ...
 │   └── ...
-├── gbt7714-2005.bst   % 参考文献样式（胡海星）
+├── gbt7714-2005.bst   % 参考文献样式（南京大学胡海星）
 ├── logo
-│   ├── QSY.pdf
-│   └── ZJDX.pdf
+│   ├
+│   └── HDUlogo.pdf
 ├── references % 论文引文数据库 自行维护
 │   └── test.bib
-├── zjuthesis.cls       % 论文全书样式 小心查看和修改 避免手残
+├── hduthesis.cls       % 论文全书样式 小心查看和修改 避免手残
 └── ...
 ```
 
@@ -122,7 +123,7 @@ windows和Linxu 皆使用 TeXLive 2016 安装
 
 ## 4、注意事项
 
-建议使用TeXLive 2016发行版，并采用XeLaTeX进行编译。
+建议使用TeXLive 2016及以上发行版，并采用XeLaTeX进行编译。
 论文模板属于学习交流性质，
 暂无任何官方机构为本模板合法性背书。
 另请**妥善维护**自己的论文资料，
@@ -137,4 +138,4 @@ windows和Linxu 皆使用 TeXLive 2016 安装
 
 **MIT** 
 
-欢迎 issue 和 PR
+欢迎 issue 和 PR，方便大家一起探讨
