@@ -15,9 +15,13 @@ The LaTeX template of thesis of HDU
 
 ## 2、编译方法
 
+注意事项：所有的操作系统，必须保证自己的LaTeX编译系统为TexLive2016及以上版本。针对Windows系统配置的LaTeX编译系统
+为MiKTex，导致tex文件无法正常编译。解决方法是，需要􏵩􏵪􏵔􏵡􏵫􏵦􏵧􏴷􏵕􏱷􏳜􏵧用户先卸载原有的编译系统，再安装最新版本的TexLive编译系统。
+
+
 ### 2.1 使用mac的用户请看下面（windows用户直接略过）
 
-使用mac或者linux的用户可以通过下面的途径下载Adobe字体，解压放到～/Library/Fonts目录下(如果不知道怎么放入————第一步：打开访达；第二步：按住shift+command+g,这时候就出现了～/Library目录，再进入Fonts目录，把字体放入即可）
+使用mac或者linux的用户可以通过下面的途径下载Adobe字体，解压放到～/Library/Fonts目录下(如果不知道怎么放入————放到~/Library/Fonts/目录下即可。具体，第一步：打开访达；第二步：按住shift+command+g,这时候就出现了～/Library目录，再进入Fonts目录，把字体放入即可）
 第三步：把解压的字体包直接放入到Fonts目录，保存即可)，即可解决编译时出现的字体找不到错误。
 
 - [字体包下载-百度盘](https://pan.baidu.com/s/16enRqhqjpeSvxiaKkQ07jg)
