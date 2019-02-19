@@ -16,7 +16,7 @@ The LaTeX template of thesis of HDU
 ## 2、编译方法
 
 注意事项：所有的操作系统，必须保证自己的LaTeX编译系统为TexLive2016及以上版本。针对Windows系统配置的LaTeX编译系统
-为MiKTex，导致tex文件无法正常编译。解决方法是，需要􏵩􏵪􏵔􏵡􏵫􏵦􏵧􏴷􏵕􏱷􏳜􏵧用户先卸载原有的编译系统，再安装最新版本的TexLive编译系统。
+为MiKTex，导致tex文件无法正常编译。解决方法是，需要􏵩􏵪􏵔􏵡􏵫􏵦􏵧􏴷􏵕􏱷􏳜􏵧用户先卸载原有的编译系统，再安装最新版本的TexLive编译系统。请勿将该文件夹存放在中文目录下。
 
 
 ### 2.1 使用mac的用户请看下面（windows用户直接略过）
@@ -96,10 +96,26 @@ windows和Linxu 皆使用 TeXLive 2016 安装
 
     $ echo "\$clean_ext = 'synctex.gz synctex.gz(busy) acn acr alg aux bbl bcf blg brf dvi fdb_latexmk glg glo gls idx ilg ind ist lof log lot lox out paux pdfsync run.xml toc';">>~/.latexmkrc
 
+### 2.6、 使用 VSCode + LaTeX Workshop 进行编译输出 (Windows 平台测试通过，其他平台未测试)
+
+测试环境为 Windows10 (1809) + TeXLive2017。需要 TexLive 环境，[VSCode](https://code.visualstudio.com/) 以及 [LaTex Workshop](https://github.com/James-Yu/LaTeX-Workshop) 插件。
+
+使用 `.vscode` 目录下的 `settings.json` 中的 recipe 作为编译工具链，使用 xelatex 进行编译，编译完成后自动输出 pdf。
+
+> 注意：如果使用 VSCode 作为编辑器，需将 `hduthesis.tex` 文件头部的 **!TEX builder** 以及 **!TEX program** 两个指令注释掉。
+
+编译可以通过 `F1->LaTeX Workshop: Build LaTex project->xelatex->bibtex->xelatex*2` 完成，或者使用快捷键 `ctrl+alt+b`。
+
+清除文件可以通过 `F1->LaTeX Workshop: Clean up auxiliary files` 完成，或者使用快捷键 `ctrl+alt+c`。
+
+预览 pdf 可以通过 `F1->LaTeX Workshop: View Latex PDF file` 完成，或者使用快捷键 `ctrl+alt+v`。
+
 
 ## 3、相关资源文件说明
 ```tex
 ├── clean.bat % windows的清理批处理
+├── .vscode  % vscode 编辑器设置
+│   └── settings.json
 ├── contents  % 被引用的内容 不可嵌套引用
 │   ├── abstract_chinese.tex
 │   ├── abstract_english.tex
